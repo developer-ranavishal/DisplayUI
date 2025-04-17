@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/visualizer1" android:duration="150" />
+    <item android:drawable="@drawable/visualizer2" android:duration="150" />
+    <item android:drawable="@drawable/visualizer3" android:duration="150" />
+    <item android:drawable="@drawable/visualizer4" android:duration="150" />
+    <item android:drawable="@drawable/visualizer5" android:duration="150" />
+    <item android:drawable="@drawable/visualizer6" android:duration="150" />
+    <item android:drawable="@drawable/visualizer7" android:duration="150" />
+    <item android:drawable="@drawable/visualizer8" android:duration="150" />
+    <item android:drawable="@drawable/visualizer9" android:duration="150" />
+    <item android:drawable="@drawable/visualizer10" android:duration="150" />
+    <item android:drawable="@drawable/visualizer11" android:duration="150" />
+    <item android:drawable="@drawable/visualizer12" android:duration="150" />
+    <item android:drawable="@drawable/visualizer13" android:duration="150" />
+    <item android:drawable="@drawable/visualizer14" android:duration="150" />
+    <item android:drawable="@drawable/visualizer15" android:duration="150" />
+    <item android:drawable="@drawable/visualizer16" android:duration="150" />
+    <item android:drawable="@drawable/visualizer17" android:duration="150" />
+    <item android:drawable="@drawable/visualizer18" android:duration="150" />
+</animation-list>

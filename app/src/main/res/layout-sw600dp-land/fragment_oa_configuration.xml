@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:id="@+id/parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_cross"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:padding="@dimen/_4dp"
+            app:srcCompat="@drawable/cross"
+            app:tint="@color/white"
+            android:layout_margin="@dimen/_32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_inner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/_16dp"
+            android:layout_marginHorizontal="@dimen/_400dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/display_bg_color"
+            android:layout_marginVertical="@dimen/_100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/welcomeImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150dp"
+            android:padding="@dimen/_42dp"
+            android:contentDescription="Okas logo"
+            android:src="@drawable/okas_logo_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/firstTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12dp"
+            android:fontFamily="@font/proxima_nova_light"
+            android:text="How do you do"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeImageView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/secondTextView"
+            android:layout_width="0dp"
+             android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_24dp"
+            android:layout_marginTop="@dimen/_36dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="@string/configuration_display_text"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstTextView" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/credentialsImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:contentDescription="Settings"
+            android:src="@drawable/otp_setting_wheel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/masterControllerAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_44dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="@string/master_controller_address"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/credentialsImageView" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/uidEditText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginHorizontal="@dimen/_100dp"
+            android:background="@drawable/rounded_master_controller"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:paddingHorizontal="@dimen/_32dp"
+            android:digits="0123456789."
+            android:hint="Enter Server Address"
+            android:textColorHint="@color/black"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/masterControllerAddressTextView" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/ic_auto_fetch"
+            android:padding="@dimen/_16dp"
+            app:srcCompat="@drawable/ic_auto_fetch_circle"
+            android:layout_marginEnd="@dimen/_8dp"
+            app:layout_constraintWidth_percent="0.1"
+            app:layout_constraintRight_toRightOf="@id/uidEditText"
+            app:layout_constraintTop_toTopOf="@id/uidEditText"
+            app:layout_constraintBottom_toBottomOf="@id/uidEditText"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/deviceIdLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="@string/device_id_txt"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uidEditText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/deviceIdTextView"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_80dp"
+                android:paddingHorizontal="@dimen/_32dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:gravity="start|center"
+                android:background="@drawable/rounded_master_controller"
+                android:textColor="@color/device_id_filled_color"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintEnd_toEndOf="@+id/uidEditText"
+                app:layout_constraintStart_toStartOf="@+id/uidEditText"
+                app:layout_constraintTop_toBottomOf="@id/deviceIdLabelTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.example.okastabui.CustomProgressButton
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2dp"
+            android:layout_marginBottom="@dimen/_2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100dp"
+            app:srcCompat="@drawable/curved_window"
+            app:layout_constraintStart_toStartOf="@id/cl_inner"
+            app:layout_constraintEnd_toEndOf="@id/cl_inner"
+            app:layout_constraintTop_toBottomOf="@id/cl_inner" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="master_id_color">#F9FEFF</color>
+    <color name="black">#000000</color>
+    <color name="txt_temp_color">#FF9500</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="device_id_color">#D8EBEF</color>
+     <color name="light_green">#90EE90</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="txt_floor_name_color">#686868</color>
+    <color name="color_primary">#0094AD</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="common_text_color">#5B5B5B</color>
+    <color name="custom_btn_on_boarding_disable_color">#D8EBEF</color>
+    <color name="device_id_filled_color">#424242</color>
+    <color name="switch_on_color">#36AAB7</color>
+    <color name="connection_error_color">#FF474C</color>
+    <color name="custom_btn_on_boarding_enable_color">#0096B0</color>
+    <color name="selected_floor_color">#36AAB7</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="green">#008000</color>
+    <color name="default_floor_color">#000000</color>
+    <color name="grey">#808080</color>
+    <color name="thermostat">#555555</color>
+    <color name="connection_success">#32CD32</color>
+    <color name="connection_retry">#FFA500</color>
+    <color name="ac_temp_hot_color">#FF7171</color>
+    <color name="sky_blue_bg_color">#E3F2F5</color>
+    <color name="red">#FF0000</color>
+    <color name="bg_color_card">#e8dbdc</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="media_remote_btn_color">#4091AA</color>
+    <color name="d2h_dashboard_media_bar">#9CD4DE</color>
+    <color name="sunset_color">#CDCDC8</color>
+    <color name="bg_shadow_color">#E8DBDC</color>
+    <color name="button_pink_color">#DDC7D8</color>
+    <color name="create_mood_default_icon_color">#434343</color>
+    <color name="custom_mood_icon_bg_color">#A2A2A2</color>
+    <color name="ac_temp_cold_color">#7ADAFF</color>
+    <color name="dark_gray">#434343</color>
+    <color name="sunrise_color">#FFE2AA</color>
+    <color name="scheduling_any_time_color">#E3F2F5</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="scheduler_any_time_adapter_color">#B5C5D1</color>
+    <color name="bg_color">#e1d5c9</color>
+    <color name="hint_color">#0a2866</color>
+    <color name="light_btn_color">#575555</color>
+    <color name="music_assistant_dashboard_background_color">#F2FDFF</color>
+     <color name="music_assistant_album_bg_color">#f4fdff</color>
+     <color name="music_assistant_album_list__bg_color">#effafc</color>
+    <color name="display_bg_color">#e8f4f7</color>
+
+
+</resources>

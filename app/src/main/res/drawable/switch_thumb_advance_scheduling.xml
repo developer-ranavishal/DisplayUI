@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="@dimen/_2dp"
+        android:drawable="@drawable/bg_circle_black"
+        android:left="@dimen/_2dp"
+        android:right="@dimen/_2dp"
+        android:top="@dimen/_2dp" />
+</layer-list>
