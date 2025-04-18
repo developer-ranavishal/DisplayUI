@@ -9,6 +9,6 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_add_member)
+        setContentView(R.layout.fragment_light_tunable)
     }
 }
