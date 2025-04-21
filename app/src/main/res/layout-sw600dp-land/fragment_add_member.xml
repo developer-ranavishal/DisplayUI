@@ -7,7 +7,7 @@
     <include layout="@layout/black_item_overlay_layout" />
 
     <include
-        android:id="@+id/cl_inner"
+        android:id="@+id/cl_inner_outer"
         layout="@layout/curve_item_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -23,13 +23,13 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/_96dp"
-        app:layout_constraintBottom_toBottomOf="@id/cl_inner"
-        app:layout_constraintEnd_toEndOf="@id/cl_inner"
-        app:layout_constraintStart_toStartOf="@id/cl_inner"
-        app:layout_constraintTop_toTopOf="@id/cl_inner">
+        app:layout_constraintBottom_toBottomOf="@id/cl_inner_outer"
+        app:layout_constraintEnd_toEndOf="@id/cl_inner_outer"
+        app:layout_constraintStart_toStartOf="@id/cl_inner_outer"
+        app:layout_constraintTop_toTopOf="@id/cl_inner_outer">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_inner2"
+            android:id="@+id/cl_inner"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -38,8 +38,8 @@
                 android:layout_width="@dimen/_40dp"
                 android:layout_height="@dimen/_40dp"
                 android:layout_margin="@dimen/_2dp"
-                app:layout_constraintEnd_toEndOf="@id/cl_inner2"
-                app:layout_constraintTop_toTopOf="@id/cl_inner2"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintTop_toTopOf="@id/cl_inner"
                 app:srcCompat="@drawable/cross"
                 app:tint="@color/grey" />
 
@@ -50,9 +50,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_32dp"
                 android:src="@drawable/profile"
-                app:layout_constraintEnd_toEndOf="@id/cl_inner2"
-                app:layout_constraintStart_toStartOf="@id/cl_inner2"
-                app:layout_constraintTop_toTopOf="@id/cl_inner2" />
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
+                app:layout_constraintTop_toTopOf="@id/cl_inner" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/member"
@@ -80,7 +80,7 @@
                 android:text="Welcome to OKAS - Unleash the power of your individuality."
                 android:textColor="@color/common_text_color"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@id/cl_inner2"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
                 app:layout_constraintTop_toBottomOf="@id/member" />
 
 
@@ -90,8 +90,8 @@
                 android:layout_height="@dimen/_160dp"
                 android:layout_marginTop="@dimen/_40dp"
                 android:scaleType="centerCrop"
-                app:layout_constraintEnd_toEndOf="@id/cl_inner2"
-                app:layout_constraintStart_toStartOf="@id/cl_inner2"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
                 app:layout_constraintTop_toBottomOf="@id/second_member"
                 app:shapeAppearanceOverlay="@style/RoundedImage_Size_50"
                 app:srcCompat="@drawable/userone" />
@@ -136,17 +136,16 @@
                 android:id="@+id/fullNameEditText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/_8dp"
                 android:background="@drawable/rounded_master_controller"
                 android:fontFamily="@font/proxima_nova_regular"
                 android:gravity="center"
                 android:inputType="textPersonName"
                 android:padding="@dimen/_16dp"
-                android:paddingHorizontal="@dimen/_32dp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sp"
-                app:layout_constraintEnd_toEndOf="@id/cl_inner2"
-                app:layout_constraintStart_toStartOf="@id/cl_inner2"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
                 app:layout_constraintTop_toBottomOf="@id/fullNameLabel"
                 app:layout_constraintWidth_percent=".4" />
 
@@ -177,8 +176,8 @@
                 android:padding="@dimen/_16dp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sp"
-                app:layout_constraintEnd_toEndOf="@id/cl_inner2"
-                app:layout_constraintStart_toStartOf="@id/cl_inner2"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
                 app:layout_constraintTop_toBottomOf="@id/nickNameLabel"
                 app:layout_constraintWidth_percent=".4" />
 
@@ -209,8 +208,8 @@
                 android:text="Select"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18sp"
-                app:layout_constraintEnd_toEndOf="@id/cl_inner2"
-                app:layout_constraintStart_toStartOf="@id/cl_inner2"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
                 app:layout_constraintTop_toBottomOf="@id/memberTypeLabel"
                 app:layout_constraintWidth_percent=".4" />
 
@@ -240,30 +239,173 @@
                 android:padding="@dimen/_16dp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18sp"
-                app:layout_constraintEnd_toEndOf="@id/cl_inner2"
-                app:layout_constraintStart_toStartOf="@id/cl_inner2"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
                 app:layout_constraintTop_toBottomOf="@id/mobileNumberLabel"
                 app:layout_constraintWidth_percent=".4" />
 
 
-            <com.example.okastabui.CustomProgressButton
-                android:id="@+id/submitBtn"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dobLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_2dp"
-                android:elevation="@dimen/_2dp"
-                app:layout_constraintBottom_toBottomOf="@id/iv_bottom_curved"
-                app:layout_constraintEnd_toEndOf="@id/iv_bottom_curved"
-                app:layout_constraintStart_toStartOf="@id/iv_bottom_curved" />
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Date of Birth"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintEnd_toEndOf="@+id/mobileNumberEditText"
+                app:layout_constraintStart_toStartOf="@+id/mobileNumberEditText"
+                app:layout_constraintTop_toBottomOf="@id/mobileNumberEditText" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_bottom_curved"
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/dobText"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_100dp"
-                app:layout_constraintEnd_toEndOf="@id/cl_inner2"
-                app:layout_constraintStart_toStartOf="@id/cl_inner2"
-                app:layout_constraintTop_toBottomOf="@id/cl_inner2"
-                app:srcCompat="@drawable/curved_window" />
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_100dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:background="@drawable/rounded_master_controller"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_16dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
+                app:layout_constraintTop_toBottomOf="@id/dobLabel"
+                app:layout_constraintWidth_percent=".4" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/genderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Gender"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintEnd_toEndOf="@+id/mobileNumberEditText"
+                app:layout_constraintStart_toStartOf="@+id/mobileNumberEditText"
+                app:layout_constraintTop_toBottomOf="@id/mobileNumberEditText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/genderType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_100dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:background="@drawable/rounded_master_controller"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_16dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
+                app:layout_constraintTop_toBottomOf="@id/genderLabel"
+                app:layout_constraintWidth_percent=".4" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/emailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Email ID"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintEnd_toEndOf="@+id/mobileNumberEditText"
+                app:layout_constraintStart_toStartOf="@+id/mobileNumberEditText"
+                app:layout_constraintTop_toBottomOf="@id/mobileNumberEditText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_100dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:background="@drawable/rounded_master_controller"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_16dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
+                app:layout_constraintTop_toBottomOf="@id/emailLabel"
+                app:layout_constraintWidth_percent=".4" />
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/passwordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Password"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintEnd_toEndOf="@+id/mobileNumberEditText"
+                app:layout_constraintStart_toStartOf="@+id/mobileNumberEditText"
+                app:layout_constraintTop_toBottomOf="@id/mobileNumberEditText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_100dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:background="@drawable/rounded_master_controller"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_16dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
+                app:layout_constraintTop_toBottomOf="@id/passwordLabel"
+                app:layout_constraintWidth_percent=".4" />
+
+   <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/passwordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Password"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintEnd_toEndOf="@+id/mobileNumberEditText"
+                app:layout_constraintStart_toStartOf="@+id/mobileNumberEditText"
+                app:layout_constraintTop_toBottomOf="@id/mobileNumberEditText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_100dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:background="@drawable/rounded_master_controller"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_16dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintEnd_toEndOf="@id/cl_inner"
+                app:layout_constraintStart_toStartOf="@id/cl_inner"
+                app:layout_constraintTop_toBottomOf="@id/passwordLabel"
+                app:layout_constraintWidth_percent=".4" />
+
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>

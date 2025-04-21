@@ -12,34 +12,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent=".4" />
-
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/welcomeImageView"
             android:layout_width="0dp"
-            android:layout_height="200dp"
-            android:padding="@dimen/_32dp"
+            android:layout_height="0dp"
             android:src="@drawable/okas_logo_horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/welcomeTextView"
             app:layout_constraintEnd_toEndOf="@+id/welcomeTextView"
+            app:layout_constraintHeight_percent=".2"
+            android:layout_marginBottom="@dimen/_100dp"
             app:layout_constraintStart_toStartOf="@+id/welcomeTextView"
-            app:layout_constraintTop_toTopOf="@+id/guideline" />
+            app:layout_constraintWidth_percent=".2" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/welcomeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_96dp"
-            android:fontFamily="@font/proxima_nova_semibold"
+            android:fontFamily="@font/proxima_nova_regular"
             android:textColor="@color/black"
             android:text="@string/welcome_to_experience_tv_display"
             android:textSize="@dimen/_18sp"
-            android:layout_marginBottom="@dimen/_36dp"
+            android:layout_marginBottom="@dimen/_40dp"
             app:fontFamily="@font/proxima_nova_regular"
             app:layout_constraintBottom_toTopOf="@+id/getStartedButton"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,8 +42,9 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/getStartedButton"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_56dp"
-            android:layout_marginHorizontal="@dimen/_60dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".055"
+             android:layout_marginHorizontal="@dimen/_56dp"
             android:background="@drawable/rounded_button"
             android:backgroundTint="@color/color_primary"
             android:fontFamily="@font/proxima_nova_regular"

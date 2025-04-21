@@ -7,7 +7,7 @@
     <string name="get_started">Get Started</string>
     <string name="enter_your_okas_credentails">Enter your OKAS credentails</string>
     <string name="configuration_display_text">I am OKAS. Thank you for making me a part of your household. I am thrilled and delighted.\n
-        Can I please have your Master Controller Address</string>
+        Can I please have your Master Controller Address ?</string>
     <string name="lets_begin_the_experience">Lets Begin the experience</string>
     <string name="master_controller_address">Master Controller Address</string>
     <string name="device_id">192.168.2.108</string>
